@@ -275,12 +275,12 @@ section .cardWrapper{
   gap: 20px;
  }
  .cards .card{
-  width: 33vw;
+  width: 300px;
    background: var(--main1-bg);
    box-shadow: var(--card-shadow);
    padding: 20px;
    border-radius: 5px;
-   flex: 0 0 200px;
+   flex: 0 0 300px;
  }
  .cards .card .detail{
    display: flex;
