@@ -213,8 +213,8 @@ section.welcome .organizations{
    gap: 30px;
  }
  section.welcome .organizations .organizationList .organization{
-   font-weight: 600;
-   font-size: 24px;
+   font-weight: 450;
+   font-size: 20px;
    color: var(--primary-color);
    display: flex;
    align-items: center;
@@ -225,9 +225,8 @@ section.welcome .organizations{
    width: 20px;
    background: white;
    height: 20px;
-
    color: var(--secondary-color);
-   font-weight: 600;
+   font-weight: 450;
  }
  
  /* function*/
@@ -263,15 +262,15 @@ section.welcome .organizations{
    max-width: 100%;
    display: flex;
    align-items: center;
-   flex: 1 1 100%;
    flex-wrap: wrap;
+   flex: 1 1 100%;
    gap: 30px;
   justify-content: center;
    padding-left: 15px;
    margin-top: 30px;
  }
  .cards .card{
-  /* width: 320px;*/
+  width: 320px;
    background: var(--main1-bg);
    box-shadow: var(--card-shadow);
    padding: 20px;
@@ -298,6 +297,9 @@ font-size: 25px;
    text-align: left;
  }
 
+section.choose .cards .card .detail {
+  gap: 15px;
+}
 section.choose .cards .card .detail span{
   background: rgba(228, 229, 238, 1);
   padding: 15px 20px;
@@ -321,7 +323,7 @@ section.choose .cards .card .detail span{
     color: white;
   }
   section.services .cards .card .detail span{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 400;
   }
   
