@@ -271,7 +271,7 @@ section.welcome .organizations{
    margin-top: 30px;
  }
  .cards .card{
-   width: 320px;
+  /* width: 320px;*/
    background: var(--main1-bg);
    box-shadow: var(--card-shadow);
    padding: 20px;
