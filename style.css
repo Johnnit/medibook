@@ -1,0 +1,365 @@
+*, html{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size:16px;
+}
+:root{
+  --white-bg: #ffffff;
+--btn-color: #800080;
+--primary-color: #868686;
+--secondary-color:#2D002D;
+--box-shadow:0 4px 20px 2px #D8B0D880, 
+             0 -4px 20px 2px #D8B0D880;
+--card-shadow: 0 2px 8px #2D002D33,
+              0 -2px 8px #2D002D33;
+--testimony-cardBg: rgba(188, 161, 188, 0.5);
+--testimony-cardColor: #333334;
+--testimony-cardFont: italic;
+--testimony-cardBorder: #D8B0D8;
+--footerBg: #2D002D;
+--main1-bg: #F8F8F8;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  background: var(--white-bg);
+  padding: 16px 19px;
+  align-items: center;
+  margin:0;
+  z-index: 100;
+  text-align: center;
+}
+nav .logo{
+  
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav .logo span{
+font-size: 32px;
+}
+nav .nav-links{
+  display: flex;
+ align-items: center;
+  gap: 20px;
+  font-weight: 450;
+  font-size: 18px;
+  color: var(--background);
+}
+nav .nav-links a,
+nav .nav-links a span,
+nav .nav-links .about{
+  position: relative;
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--background);
+}
+nav .nav-links .active{
+  color: var(--btn-color);
+}
+nav .nav-btns{
+  display: flex;
+  gap: 25px;
+  font-weight: 550;
+ padding-right: 0;
+}
+button{
+  border-radius: 50px;
+}
+nav .nav-btns button{
+  width: 100px;
+  height: 50px;
+  font-weight: 550;
+  font-size: 22px;
+}
+nav .nav-btns button:nth-child(1),
+section.welcome .dwnBtns button:nth-child(2){
+  background: transparent;
+  border: 2px solid var(--btn-color);
+  color: var(--secondary-color);
+  
+}
+nav .nav-btns button:nth-child(2), 
+section.welcome .dwnBtns button:nth-child(1),
+nav .nav-btns button:nth-child(1):hover,
+section.welcome .dwnBtns button:nth-child(2):hover{
+  background: var(--btn-color);
+  border: none;
+  color: var(--white-bg);
+}
+nav .nav-btns button:nth-child(2):hover,
+section.welcome .dwnBtns button:nth-child(1):hover{
+  opacity: 0.9;
+}
+
+/* main welcome */
+section{
+  padding: 15px;
+  text-align: center;
+}
+main section.welcome{
+  width: 100%;
+  height: 100%;
+  background: var(--main1-bg);
+  
+}
+section.welcome h1{
+  text-transform: capitalize;
+  font-size: 25px;
+  font-size: clamp(25px, 2.5286rem + 2.8571vw, 96px);
+  
+}
+section.welcome p{
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 30px;
+  /*color: var(--primary-color);*/
+}
+/* down buttons*/
+section.welcome .dwnBtns{
+  width: 100%;
+  gap: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+section.welcome .dwnBtns button{
+  font-size: 32px;
+  font-weight: 500;
+  width: max-content;
+  padding:10px 25px;
+  margin-left: 20px;
+  height: 80px;
+  text-wrap: nowrap;
+  text-align: center;
+}
+section.welcome .dwnBtns button:nth-child(1)
+{
+  box-shadow: var(--box-shadow);
+}
+ section.welcome .dwnBtns button span{
+   margin: 0 8px;
+   font-size: 25px;
+ }
+ /* grouped images */
+ section.welcome .groupImgs{
+   margin-top: 50px;
+   position: relative;
+   gap: 20px;
+ }
+ section.welcome .groupImgs img{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   left: 40%;
+   margin-left: calc(var(--i)*20px);
+ }
+ /* three doctors care */
+section.welcome .docsImg,
+section.welcome .organizations{
+  position: relative;
+   width: 100%;
+   height: auto;
+   display: flex;
+   margin-top: 150px;
+   justify-content: center;
+   align-items: center;
+ } 
+ section.welcome .docsImg .docImgs{
+   display: flex;
+   flex-wrap: nowrap;
+   flex-shrink: 0;
+   gap: 20px;
+   width: 100%;
+ }
+ section.welcome .docImgs .grp,
+ section.welcome .docImgs .singleImg {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 20px;
+ }
+ section.welcome .docImgs .singleImg img{
+   width: 100%;
+   height : 600px;
+   border-radius: 15px;
+ }
+ section.welcome .docImgs .grp img{
+   width: 100%;
+   height: 290px;
+   border-radius: 15px;
+ }
+ 
+ /* organizations*/
+ section.welcome .organizations{
+  margin-top: 50px;
+ }
+ section.welcome .organizations .organizationList{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 30px;
+ }
+ section.welcome .organizations .organizationList .organization{
+   font-weight: 600;
+   font-size: 24px;
+   color: var(--primary-color);
+   display: flex;
+   align-items: center;
+   gap:5px;
+   text-wrap: nowrap;
+ }
+ section.welcome .organizations .organizationList .organization span{
+   width: 20px;
+   background: white;
+   height: 20px;
+
+   color: var(--secondary-color);
+   font-weight: 600;
+ }
+ 
+ /* function*/
+ section.function, 
+ section.choose,
+ section.services,
+ section.testimonials{
+   width: 100%;
+   margin-top: 50px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ section.function h2,
+ section.choose h2,
+ section.services h2{
+   font-size:96px;
+   color: var(--btn-color);
+   font-weight: 540;
+ }
+ section.function p,
+ section.choose p,
+ section.services p{
+   margin: 20px 0;
+   font-size: 3.4rem;
+   font-weight: 400;
+   color: var(--primary-color);
+ }
+ .cards{
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   flex: 1 1 100%;
+   flex-wrap: wrap;
+   gap: 30px;
+  justify-content: center;
+   padding-left: 15px;
+   margin-top: 30px;
+ }
+ .cards .card{
+   width: 320px;
+   background: var(--main1-bg);
+   box-shadow: var(--card-shadow);
+   padding: 20px;
+   border-radius: 5px;
+ }
+ .cards .card .detail{
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   font-size: 25px;
+ }
+ .cards .card .detail span{
+   color: var(--btn-color);
+   font-size: 25px;
+ }
+ .cards .card :where(.detail span, .detail p){
+font-size: 25px;
+   color: black;
+   font-weight: 600;
+ }
+ .cards .card .content p{
+   font-size: 16px;
+   font-weight: 400;
+   text-align: left;
+ }
+
+section.choose .cards .card .detail span{
+  background: rgba(228, 229, 238, 1);
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+ 
+ /* services */
+ section.services .cards .card:hover{
+   transition: 2s;
+   background: var(--btn-color); 
+   
+ }
+ section.services .cards .card .detail{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+  section.services .cards .card:hover .content p,
+  section.services .cards .card:hover .detail span,
+  section.services .cards .card:hover .detail p{
+    color: white;
+  }
+  section.services .cards .card .detail span{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  /* testimonials*/
+  section.testimonials h2{
+    font-size: 40px;
+  }
+  section.testimonials p{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  section.testimonials .cards .card {
+    background: var(--testimony-cardBg);
+    color:var(--testimony-cardColor);
+    font-style:var(--testimony-cardFont);
+    border: 1px solid var(--testimony-cardBorder);
+    box-shadow: none;
+  }
+  
+  section.testimonials .cards .card .detail img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  section.testimonials .cards .card .content{
+  text-align: left;
+}
+section.testimonials .cards .card .content p{
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+section.testimonials .cards .card .content strong{
+ font-style: none;
+  font-size: 20px;
+}
+section.testimonials .cards .card .content span{
+  font-size: 18px;
+  font-weight: 500;
+}
