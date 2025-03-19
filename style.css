@@ -239,7 +239,7 @@ section.welcome .organizations{
    text-align: center;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+  /* justify-content: center;*/
    align-items: center;
  }
  section.function h2,
@@ -254,7 +254,7 @@ section.welcome .organizations{
  section.services p{
    margin: 20px 0;
    font-size: 34px;
-   font-weight: 400;
+   font-weight: 450;
    color: var(--primary-color);
  }
  .cards{
