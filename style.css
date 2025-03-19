@@ -11,9 +11,9 @@
 --secondary-color:#2D002D;
 --box-shadow:0 4px 20px 2px #D8B0D880, 
              0 -4px 20px 2px #D8B0D880;
---card-shadow: 0 2px 8px #2D002D33,
-              0 -2px 8px #2D002D33;
---testimony-cardBg: rgba(188, 161, 188, 0.2);
+--card-shadow: 0 2px 10px 0 #2D002D33,
+              0 -2px 10px 0 #2D002D33;
+--testimony-cardBg:#F2E6F2/* rgba(188, 161, 188, 0.2)*/;
 --testimony-cardColor: #333334;
 --testimony-cardFont: italic;
 --testimony-cardBorder: #D8B0D8;
@@ -26,9 +26,10 @@ body {
     overflow-x: hidden;
 }
 nav{
-  display: flex;
+  
   width: 100%;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -41,8 +42,8 @@ nav{
   text-align: center;
 }
 nav .logo{
-  
-  font-weight: 600;
+  font-size: 25.59px;
+  font-weight: 700;
   color: var(--secondary-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -54,14 +55,14 @@ nav .nav-links{
  align-items: center;
   gap: 20px;
   font-weight: 450;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--background);
 }
 nav .nav-links a,
 nav .nav-links a span,
 nav .nav-links .about{
   position: relative;
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   color: var(--background);
 }
@@ -81,7 +82,7 @@ nav .nav-btns button{
   width: 100px;
   height: 50px;
   font-weight: 550;
-  font-size: 22px;
+  font-size: 18px;
 }
 nav .nav-btns button:nth-child(1),
 section.welcome .dwnBtns button:nth-child(2){
@@ -116,15 +117,15 @@ main section.welcome{
 }
 section.welcome h1{
   text-transform: capitalize;
-  font-size: 25px;
-  font-size: clamp(25px, 2.5286rem + 2.8571vw, 96px);
+  font-size: 23px;
+  font-size: clamp(23px, 2.5286rem + 2.8571vw, 64px);
   
 }
 section.welcome p{
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   padding-top: 30px;
-  /*color: var(--primary-color);*/
+  color: var(--secondary-color);
 }
 /* down buttons*/
 section.welcome .dwnBtns{
@@ -223,7 +224,6 @@ section.welcome .organizations{
  }
  section.welcome .organizations .organizationList .organization span{
    width: 20px;
-   background: white;
    height: 20px;
    color: var(--secondary-color);
    font-weight: 450;
@@ -245,37 +245,42 @@ section.welcome .organizations{
  section.function h2,
  section.choose h2,
  section.services h2{
-   font-size:96px;
+   font-size:32px;
    color: var(--btn-color);
-   font-weight: 540;
+   font-weight: 600;
  }
  section.function p,
  section.choose p,
  section.services p{
    margin: 20px 0;
-   font-size: 34px;
-   font-weight: 450;
+   font-size: 16px;
+   font-weight: 500;
    color: var(--primary-color);
  }
- .cards{
+section .cardWrapper{
    width: 100%;
+   position : relative;
+   display:  flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ .cards{
+   width: 80%;
    max-width: 100%;
    display: flex;
    align-items: center;
    flex-wrap: wrap;
-   flex: 1 1 100%;
-   gap: 30px;
-  justify-content: center;
-   padding-left: 15px;
    margin-top: 30px;
+  gap: 20px;
  }
  .cards .card{
-  width: 320px;
+  width: 33vw;
    background: var(--main1-bg);
    box-shadow: var(--card-shadow);
    padding: 20px;
    border-radius: 5px;
-   flex: 0 0 320px;
+   flex: 0 0 200px;
  }
  .cards .card .detail{
    display: flex;
@@ -331,6 +336,9 @@ section.choose .cards .card .detail span{
   }
   
   /* testimonials*/
+  section.testimonials {
+    background: var(--main1-bg);
+  }
   section.testimonials h2.head{
     text-wrap: no;
     font-size: 40px;
@@ -345,6 +353,7 @@ section.choose .cards .card .detail span{
     color:var(--testimony-cardColor);
     font-style:var(--testimony-cardFont);
     border: 1px solid var(--testimony-cardBorder);
+    border-radius: 8px;
     box-shadow: none;
     flex: 0 0 320px;
   }
