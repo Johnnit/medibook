@@ -112,7 +112,7 @@ main section.welcome{
   width: 100%;
   height: 100%;
   background: var(--main1-bg);
-  
+  padding-top: 100px;
 }
 section.welcome h1{
   text-transform: capitalize;
@@ -253,7 +253,7 @@ section.welcome .organizations{
  section.choose p,
  section.services p{
    margin: 20px 0;
-   font-size: 3.4rem;
+   font-size: 34px;
    font-weight: 400;
    color: var(--primary-color);
  }
@@ -275,7 +275,7 @@ section.welcome .organizations{
    box-shadow: var(--card-shadow);
    padding: 20px;
    border-radius: 5px;
-   
+   flex: 0 0 320px;
  }
  .cards .card .detail{
    display: flex;
@@ -331,12 +331,12 @@ section.choose .cards .card .detail span{
   }
   
   /* testimonials*/
-  section.testimonials h2{
-    word-wrap: normal;
+  section.testimonials h2.head{
+    text-wrap: no;
     font-size: 40px;
   }
-  section.testimonials p{
-   
+  section.testimonials p.first{
+   text-wrap: nowrap;
     font-size: 30px;
     font-weight: 500;
   }
@@ -346,6 +346,7 @@ section.choose .cards .card .detail span{
     font-style:var(--testimony-cardFont);
     border: 1px solid var(--testimony-cardBorder);
     box-shadow: none;
+    flex: 0 0 320px;
   }
   
   section.testimonials .cards .card .detail img{
