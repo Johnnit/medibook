@@ -26,15 +26,15 @@ section.welcome p{
   font-size: 1.9rem;
 }
 section.welcome .dwnBtns button{
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   width: fit-content;
-  margin-left: 20px;
+  margin-left: 10px;
   height: 45px;
 }
 section.welcome .dwnBtns button span{
    margin: 0 8px;
-   font-size: 1rem;
+   font-size: 16px;
  }
  section.welcome .docImgs .singleImg img{
    height : 400px;

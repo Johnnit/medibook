@@ -13,7 +13,7 @@
              0 -4px 20px 2px #D8B0D880;
 --card-shadow: 0 2px 8px #2D002D33,
               0 -2px 8px #2D002D33;
---testimony-cardBg: rgba(188, 161, 188, 0.5);
+--testimony-cardBg: rgba(188, 161, 188, 0.2);
 --testimony-cardColor: #333334;
 --testimony-cardFont: italic;
 --testimony-cardBorder: #D8B0D8;
