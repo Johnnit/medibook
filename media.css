@@ -26,10 +26,9 @@ section.welcome p{
   font-size: 1.9rem;
 }
 section.welcome .dwnBtns button{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   width: fit-content;
-  margin-left: 10px;
   height: 45px;
 }
 section.welcome .dwnBtns button span{
