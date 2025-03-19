@@ -346,12 +346,11 @@ section.choose .cards .card .detail span{
     background: var(--main1-bg);
   }
   section.testimonials h2.head{
-    text-wrap: no;
-    font-size: 40px;
+    font-size: 20px;
+    font-weight: 600;
   }
   section.testimonials p.first{
-   text-wrap: nowrap;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 500;
   }
   section.testimonials .cards .card {
@@ -365,8 +364,8 @@ section.choose .cards .card .detail span{
   }
   
   section.testimonials .cards .card .detail img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-bottom: 15px;
   }
@@ -374,15 +373,19 @@ section.choose .cards .card .detail span{
   text-align: left;
 }
 section.testimonials .cards .card .content p{
-  margin: 10px 0;
-  font-size: 18px;
+  margin: 15px 0;
+  font-size: 16px;
   font-weight: 400;
+  color:#333334;
 }
 section.testimonials .cards .card .content strong{
  font-style: none;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
 }
 section.testimonials .cards .card .content span{
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333334;
 }
