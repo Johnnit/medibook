@@ -282,10 +282,14 @@ section .cardWrapper{
  }
  section.function .card,
  section.choose .card{
-   height: 150px;
+   min-height: 220px;
+   height: 250px;
+   max-height: 250px;
  }
  section.services .card{
-   height: 230px;
+   height: 270px;
+   min-height: 250px;
+   max-height: 270px;
  }
  .cards .card{
   width: 300px;

@@ -90,6 +90,7 @@ section.services h2{
  }
  .cards .card{
    min-width: 220px;
+   width: 100%;
    padding: 2rem 1.4rem;
  }
   .cards .card .detail{
