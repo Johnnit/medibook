@@ -280,6 +280,13 @@ section .cardWrapper{
    margin-top: 30px;
   gap: 20px;
  }
+ section.function .card,
+ section.choose .card{
+   height: 150px;
+ }
+ section.services .card{
+   height: 230px;
+ }
  .cards .card{
   width: 300px;
    background: var(--main1-bg);
@@ -360,7 +367,7 @@ section.choose .cards .card .detail span{
     border: 1px solid var(--testimony-cardBorder);
     border-radius: 8px;
     box-shadow: none;
-    flex: 0 0 320px;
+    flex: 0 0 300px;
   }
   
   section.testimonials .cards .card .detail img{
