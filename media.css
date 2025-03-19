@@ -3,8 +3,20 @@
     width: 100%;
     overflow-x: hidden;
   }
-  nav {
+  nav .nav-links,
+  nav .nav-btns{
   display: none;
+}
+nav .menu,
+nav .menu span{
+  color: #000;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+}
+nav .logo{
+  display: block;
+  font-size: 20px;
 }
 section{
   width:100%;
@@ -35,11 +47,24 @@ section.welcome .dwnBtns button span{
    margin: 0 8px;
    font-size: 16px;
  }
+ section.welcome .docsImg .docImgs{
+   display: flex;
+   flex-wrap: nowrap;
+   flex-shrink: 0;
+   flex-direction: column;
+   gap: 20px;
+   width: 100%;
+ }
  section.welcome .docImgs .singleImg img{
    height : 400px;
+   width: 100%;
+ }
+ section.welcome .docImgs .grp {
+   flex-direction: column;
  }
  section.welcome .docImgs .grp img{
    height: 190px;
+   width: 100%;
  }
  section.welcome .groupImgs img{
    left:20vw;
