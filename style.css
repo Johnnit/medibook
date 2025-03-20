@@ -277,7 +277,6 @@ section .cardWrapper{
    display: flex;
    align-items: center;
    flex-shrink: 1;
-   flex-wrap: nowrap;
    margin: 0 auto;
    margin-top: 30px;
    gap: 20px;
