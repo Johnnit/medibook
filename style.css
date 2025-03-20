@@ -272,13 +272,14 @@ section .cardWrapper{
    
  }
  .cards{
-   width: 80%;
+   width: 100%;
    max-width: 100%;
    display: flex;
    align-items: center;
    flex-wrap: wrap;
+   margin: 0 auto;
    margin-top: 30px;
-  gap: 20px;
+   gap: 20px;
  }
  section.function .card,
  section.choose .card{
