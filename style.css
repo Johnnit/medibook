@@ -365,14 +365,14 @@ section.choose .cards .card .detail span{
     font-weight: 500;
   }
   section.testimonials .cards .card {
-    max-width: 100%;
+    width: 300px;
     background: var(--testimony-cardBg);
     color:var(--testimony-cardColor);
     font-style:var(--testimony-cardFont);
     border: 1px solid var(--testimony-cardBorder);
     border-radius: 8px;
     box-shadow: none;
-    flex: 1 1 100%;
+    flex: 1 1 300px;
   }
   
   section.testimonials .cards .card .detail img{

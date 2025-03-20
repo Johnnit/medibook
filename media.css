@@ -87,6 +87,10 @@ section.services h2{
  section.services p{
    font-size: 1.5rem;
  }*/
+ section .cardWrapper{
+   width: 100%;
+   padding: 20px;
+ }
  .cards{
    padding: 0;
    width: 100%;
