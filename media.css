@@ -93,7 +93,7 @@ section.services h2{
  }
  .cards{
    padding: 0;
-   width: 100%;
+   width: 90%;
  }
   .cards .card .detail{
    font-size: 25px;
@@ -104,7 +104,7 @@ section.services h2{
    max-width: 100%;
    padding: 20px;
    height: auto;
-   flex: 0 0 100%;
+   flex: 0 1 100%;
  }
   .cards .card .detail{
    gap: 15px;
