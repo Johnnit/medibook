@@ -40,7 +40,7 @@ section.welcome p{
 section.welcome .dwnBtns button{
   font-size: 14px;
   font-weight: 500;
-  width: fit-content;
+  padding: 0 20px;
   height: 45px;
 }
 section.welcome .dwnBtns button span{
@@ -69,7 +69,7 @@ section.welcome .dwnBtns button span{
  section.welcome .groupImgs img{
    left:20vw;
  }
- section.welcome .organizations .organizationList .organization{
+/* section.welcome .organizations .organizationList .organization{
    font-size: 1rem;
  }
  section.function h2,
@@ -81,30 +81,30 @@ section.services h2{
  section.choose p,
  section.services p{
    font-size: 1.5rem;
- }
+ }*/
  .cards{
    padding: 0;
  }
   .cards .card .detail{
-   font-size: 2rem;
+   font-size: 25px;
  }
  .cards .card{
-   min-width: 220px;
+   min-width: 100%;
    width: 100%;
-   padding: 2rem 1.4rem;
+   padding: 20px;
    height: auto;
  }
   .cards .card .detail{
    gap: 15px;
  }
  .cards .card .detail span{
-   font-size: 2.1rem;
+   font-size: 25px;
  }
  .cards .card :where(.detail span, .detail p){
-font-size: 1.9rem;
+font-size: 22px;
  }
  .cards .card .content p{
-   font-size: 1.7rem;
+   font-size: 16px;
  }
  section.choose .cards .card .detail span{
   background: var(--main1-bg);
