@@ -84,6 +84,7 @@ section.services h2{
  }*/
  .cards{
    padding: 0;
+   width: 100%;
  }
   .cards .card .detail{
    font-size: 25px;
