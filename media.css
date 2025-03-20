@@ -43,9 +43,14 @@ section.welcome .dwnBtns button{
   padding: 0 20px;
   height: 45px;
 }
+section.welcome .dwnBtns button span.fa{
+  display: none;
+  
+}
 section.welcome .dwnBtns button span{
    margin: 0 8px;
    font-size: 16px;
+   padding: 10px 5px;
  }
  section.welcome .docsImg .docImgs{
    display: flex;
@@ -107,8 +112,8 @@ section.services h2{
 font-size: 22px;
  }
  .cards .card .content p{
-   font-size: 16px;
-   color:green;
+   font-size: 18px;
+   
  }
  section.choose .cards .card .detail span{
   background: var(--main1-bg);
