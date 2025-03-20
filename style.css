@@ -281,6 +281,7 @@ section .cardWrapper{
    margin: 0 auto;
    margin-top: 30px;
    gap: 20px;
+   flex-wrap: wrap;
  }
  section.function .cards .card,
  section.choose .cards .card{

@@ -93,6 +93,7 @@ section.services h2{
  }
  .cards{
    padding: 0;
+   flex-wrap: wrap;
    width: 90%;
  }
   .cards .card .detail{
