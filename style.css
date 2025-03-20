@@ -276,13 +276,14 @@ section .cardWrapper{
    max-width: 100%;
    display: flex;
    align-items: center;
+   flex-shrink: 1;
    flex-wrap: wrap;
    margin: 0 auto;
    margin-top: 30px;
    gap: 20px;
  }
- section.function .card,
- section.choose .card{
+ section.function .cards .card,
+ section.choose .cards .card{
    min-height: 220px;
    height: 250px;
  }
@@ -296,7 +297,7 @@ section .cardWrapper{
    box-shadow: var(--card-shadow);
    padding: 20px;
    border-radius: 8px;
-   flex: 1 1 100%;
+   flex: 1 1 300px;
  }
  .cards .card .detail{
    display: flex;
