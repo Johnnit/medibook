@@ -297,7 +297,7 @@ section .cardWrapper{
    box-shadow: var(--card-shadow);
    padding: 20px;
    border-radius: 8px;
-   flex: 1 1 300px;
+   flex: 1 0 300px;
  }
  .cards .card .detail{
    display: flex;
@@ -372,7 +372,7 @@ section.choose .cards .card .detail span{
     border: 1px solid var(--testimony-cardBorder);
     border-radius: 8px;
     box-shadow: none;
-    flex: 1 1 300px;
+    flex: 1 0 300px;
   }
   
   section.testimonials .cards .card .detail img{
