@@ -50,7 +50,7 @@ nav .logo{
 }
 nav .menu{
   display: none;
-  padding-right: 50px;
+  padding-right: 25px;
 }
 nav .logo span{
 font-size: 32px;
@@ -234,7 +234,9 @@ section.welcome .organizations{
    color: var(--secondary-color);
    font-weight: 450;
  }
- 
+ svg{
+   font-weight: 700;
+ }
  /* function*/
  section.function, 
  section.choose,

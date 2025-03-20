@@ -1,3 +1,23 @@
+@media screen and (max-width: 900px){
+ section.function .cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-auto-rows: 1fr;
+   gap: 20px;
+   height: auto;
+ }
+ section.choose .cards,
+ section.services .cards,
+ section.testimonials .cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: 1fr;
+   gap: 20px;
+   height: auto;
+ }
+}
+
 @media screen and (max-width: 620px){
   body{
     width: 100vw;
