@@ -1,6 +1,6 @@
 @media screen and (max-width: 620px){
   body{
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
   }
   nav .nav-links,
@@ -18,29 +18,41 @@ nav .logo{
   display: block;
   font-size: 20px;
 }
-section{
-  width:100%;
-  padding: 1.5rem;
+section,
+nav{
+  overflow-x: hidden;
 }
-section.function, 
- section.choose,
- section.services{
+
+section.function .cards, 
+ section.choose .cards,
+ section.services .cards,
+ section.testimonials .cards{
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr;
   
   
+}
+section.welcome{
+  padding-top: 0;
+}
+section.welcome .docsImg{
+  width: 100%;
 }
 section.welcome h1{
-  font-size:2.5rem;
+  font-size:35px;
 }
 section.welcome p{
-  font-size: 1.9rem;
+  font-size: 16px;
+}
+section.welcome .dwnBtns{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 section.welcome .dwnBtns button{
   font-size: 14px;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 0px 10px;
   height: 45px;
 }
 section.welcome .dwnBtns button span.fa{
@@ -74,6 +86,16 @@ section.welcome .dwnBtns button span{
  section.welcome .groupImgs img{
    left:20vw;
  }
+  section.welcome .organizations .organizationList{
+    gap: 10px;
+  }
+ section.welcome .organizations .organizationList .organization{
+   font-size: 14px;
+ }
+ section.welcome .docImgs .singleImg img,
+ section.welcome .docImgs .grp img{
+   width: 95%;
+ }
 /* section.welcome .organizations .organizationList .organization{
    font-size: 1rem;
  }
@@ -87,22 +109,17 @@ section.services h2{
  section.services p{
    font-size: 1.5rem;
  }*/
- section .cardWrapper{
-   width: 100%;
-   padding: 20px;
- }
+ 
  .cards{
    padding: 0;
    flex-wrap: wrap;
-   width: 90%;
+   width: 100%;
  }
   .cards .card .detail{
    font-size: 25px;
  }
  .cards .card{
-   min-width: 80%;
-   width: 80%;
-   max-width: 80%;
+   width: 90%;
    padding: 20px;
    height: auto;
    flex: 0 1 100%;
