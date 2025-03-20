@@ -292,7 +292,6 @@ section .cardWrapper{
  }
  .cards .card{
   width: 300px;
-  max-width: 100%;
    background: var(--main1-bg);
    box-shadow: var(--card-shadow);
    padding: 20px;
