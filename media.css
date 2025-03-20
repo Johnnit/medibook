@@ -100,9 +100,9 @@ section.services h2{
    font-size: 25px;
  }
  .cards .card{
-   min-width: 100%;
-   width: 100%;
-   max-width: 100%;
+   min-width: 80%;
+   width: 80%;
+   max-width: 80%;
    padding: 20px;
    height: auto;
    flex: 0 1 100%;

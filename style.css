@@ -284,8 +284,8 @@ section .cardWrapper{
  }
  section.function .cards .card,
  section.choose .cards .card{
-   min-height: 220px;
-   height: 250px;
+   min-height: 200px;
+   height: 220px;
  }
  section.services .card{
    height: 270px;
