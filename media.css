@@ -9,7 +9,8 @@
  }
  section.choose .cards,
  section.services .cards,
- section.testimonials .cards{
+ section.testimonials .cards,
+ section.specialist .cards{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-auto-rows: 1fr;
@@ -46,7 +47,9 @@ nav{
 section.function .cards, 
  section.choose .cards,
  section.services .cards,
- section.testimonials .cards{
+ section.testimonials .cards,
+ section.specialist .cards,
+ section.contact .cards{
   width: 100%;
   grid-template-columns: 1fr;
   
@@ -116,20 +119,6 @@ section.welcome .dwnBtns button span{
  section.welcome .docImgs .grp img{
    width: 95%;
  }
-/* section.welcome .organizations .organizationList .organization{
-   font-size: 1rem;
- }
- section.function h2,
-section.choose h2,
-section.services h2{
-   font-size: 2.5rem;
- }
- section.function p,
- section.choose p,
- section.services p{
-   font-size: 1.5rem;
- }*/
- 
  .cards{
    padding: 0;
    flex-wrap: wrap;
@@ -161,5 +150,8 @@ font-size: 22px;
   background: var(--main1-bg);
   padding: 10px 15px;
   border-radius: 50%;
+}
+section.specialist .cards .card{
+  width: 100%;
 }
 }
