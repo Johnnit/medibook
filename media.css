@@ -49,7 +49,7 @@ section.function .cards,
  section.services .cards,
  section.testimonials .cards,
  section.specialist .cards,
- section.contact .cards{
+ section.contact .form{
   width: 100%;
   grid-template-columns: 1fr;
   
