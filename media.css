@@ -39,24 +39,39 @@ nav .logo{
   display: block;
   font-size: 20px;
 }
-section,
-nav{
-  overflow-x: hidden;
-}
 
+section.function, 
+ section.choose,
+ section.services,
+ section.testimonials,
+ section.specialist,
+ section.contact{
+   width: 100%;
+   margin: 0 auto;
+   
+ }
+ 
 section.function .cards, 
  section.choose .cards,
  section.services .cards,
  section.testimonials .cards,
  section.specialist .cards,
- section.contact .form{
-  width: 100%;
+ section.contact form,
+ footer .footerMenu{
+  width: 90%;
   grid-template-columns: 1fr;
-  
+  margin:0 auto;
   
 }
-section.welcome{
-  padding-top: 0;
+section.function .cards .card, 
+ section.choose .cards .card,
+ section.services .cards .card,
+ section.testimonials .cards .card,
+ section.specialist .cards .card,
+ section.contact form,
+ footer .footerMenu
+{
+  width: 100%;
 }
 section.welcome .docsImg{
   width: 100%;
@@ -70,7 +85,7 @@ section.welcome p{
 section.welcome .dwnBtns{
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 section.welcome .dwnBtns button{
   font-size: 14px;
@@ -87,6 +102,15 @@ section.welcome .dwnBtns button span{
    font-size: 16px;
    padding: 10px 5px;
  }
+ section.welcome .docsImg,
+section.welcome .organizations{
+  position: relative;
+   width: 95%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ } 
  section.welcome .docsImg .docImgs{
    display: flex;
    flex-wrap: nowrap;
@@ -95,6 +119,15 @@ section.welcome .dwnBtns button span{
    gap: 20px;
    width: 100%;
  }
+  section.welcome .docImgs .grp,
+  section.welcome .docImgs .singleImg {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 20px;
+   padding:0;
+ }
+ 
  section.welcome .docImgs .singleImg img{
    height : 400px;
    width: 100%;
@@ -119,39 +152,50 @@ section.welcome .dwnBtns button span{
  section.welcome .docImgs .grp img{
    width: 95%;
  }
- .cards{
+ /*.cards{
    padding: 0;
-   flex-wrap: wrap;
    width: 100%;
- }
+ }*/
   .cards .card .detail{
    font-size: 25px;
+   gap: 15px;
+   padding: 20px 20px 0 20px;
  }
  .cards .card{
-   width: 90%;
-   padding: 20px;
+ /*  width: 90%;*/
    height: auto;
-   flex: 0 1 100%;
- }
-  .cards .card .detail{
-   gap: 15px;
+   
  }
  .cards .card .detail span{
    font-size: 25px;
+   
  }
  .cards .card :where(.detail span, .detail p){
 font-size: 22px;
  }
- .cards .card .content p{
+section.function .cards .card .content p, 
+ section.choose .cards .card .content p,
+ section.services .cards .card .content p,
+ section.testimonials .cards .card .content{
    font-size: 18px;
-   
+   padding: 0 20px;
+ }
+ section.testimonials .cards .card .content{
+   padding-bottom: 20px;
  }
  section.choose .cards .card .detail span{
   background: var(--main1-bg);
   padding: 10px 15px;
   border-radius: 50%;
 }
-section.specialist .cards .card{
-  width: 100%;
+section.contact form,
+footer .subscribe,
+footer .footerMenu{
+  width:90%;
+  margin: 0 auto;
+}
+footer .subscribe{
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 }

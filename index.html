@@ -18,8 +18,9 @@
 </head>
 
 <body>
- <main>
-   <nav>
+    <nav>
+      <div class="navContent">
+      
      <!-- nav logo -->
      <div class="logo">
        <svg width="25" height="25" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +53,11 @@
         <button id="signIn" class="nav-btn">Sign In</button>
         <button id="signUp" class="nav-btn">Sign Up</button>
       </div>
+      
+      </div>
    </nav>
+ <main>
+ 
    <!-- welcome -->
    <section class="welcome">
      <h1>You health, our priority - Book doctors appointment seamlessly.</h1>
@@ -418,7 +423,7 @@
      </section>
     <!-- contact us -->
      <section class="contact">
-       <h2>Start Your Health Journey Today</h1>
+       <h2>Start Your Health Journey Today</h2>
        <p>Complete the form to schedule your personalized care appointment - your path to better health begins here.</p>
        <h2>Request Appointment</h2>
        <form class="contactForm" action="" method="get" accept-charset="utf-8">
@@ -440,7 +445,7 @@
   </div>
            <div class="inputGrp">
     <label for="date">Preferred Date</label>
-    <input type="date" name="date" required id="date" />
+    <input type="date" name="date" style="background: white;" required id="date" placeholder="mm/dd/yy" />
   </div>
            <div class="inputGrp">
     <label for="message">Message</label>
@@ -449,7 +454,82 @@
            <button type="submit">Request Appointment</button>
        </form>
      </section>
+   
  </main>
+   <!-- footer -->
+   <footer>
+     <!-- subscribe-->
+     <section class="subscribe">
+       <div class="subContent">
+         <h2>Stay Informed, Stay Healthy.</h2>
+         <p>Subscribe to receive the latest health tips, expert insight and updates from Medibook.</p>
+       </div>
+       <div class="subInput">
+         <form action="" method="get" accept-charset="utf-8">
+             <input type="text" name="subscribe" id="subscribe"/>
+             <button type="submit">Subscribe</button>
+         </form>
+       
+       </div>
+     </section>
+     <!-- footer menu -->
+     <section class="footerMenu">
+       <!-- about -->
+       <div class="about">
+         <h2>MediBook</h2>
+         <p>Providing quality healthcare services with compassion and expertise.</p>
+         <div class="socials">
+           <i class="bx bxl-facebook"></i>
+           <i class="bx bxl-twitter"></i>
+           <i class="bx bxl-instagram"></i>
+           <i class="bx bxl-linkedin"></i>
+         </div>
+       </div>
+       <!-- services -->
+       <div class="servicesList">
+         <h2>Services</h2>
+         <ul class="list">
+           <li>General Consultation</li>
+           <li>Primary Care</li>
+           <li>Cardiology</li>
+           <li>Radiology</li>
+           <li>Diagnostics</li>
+           <li>Pediatrics</li>
+         </ul>
+       </div>
+           <!-- services -->
+       <div class="quickLinks">
+         <h2>Quick Links</h2>
+         <ul class="list">
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Our Doctors</a></li>
+           <li><a href="#">Appointments</a></li>
+           <li><a href="#">Insurance</a></li>
+           <li><a href="#">FAQs</a></li>
+         </ul>
+       </div>
+       <!-- contact-->
+       <div class="contactInfo">
+         <h2>Contact</h2>
+         <div class="info">
+           <span class="bx bx-pin"></span>
+           <span>Jaleyemi Street, Osogbo, Osun State, Nigeria.</span>
+         </div>
+          <div class="info">
+           <span class="bx bx-phone"></span>
+           <span>+2348073931215</span>
+         </div>
+         <div class="info">
+          <span class="bx bx-envelope"></span>
+          <span>josephajala08@gmail.com</span>
+         </div>
+       </div>
+     </section>
+     <hr />
+     <section class="copyright">
+       <cite>&copy; 2025 MediBook. All rights reserved</cite>
+     </section>
+   </footer>
   <script src="main.js"></script>
 </body>
 </html>
