@@ -199,3 +199,9 @@ footer .subscribe{
   gap: 10px;
 }
 }
+
+@media screen and (max-width: 360px){
+  section.welcome .dwnBtns button{
+    font-size: 12px;
+  }
+}
