@@ -361,9 +361,9 @@ font-size: 22px;
 section.choose .cards .card .detail {
   gap: 15px;
 }
-section.choose .cards .card .detail span{
-  background: rgba(228, 229, 238, 1);
-  padding: 15px 20px;
+section.choose .cards .card .detail span.bx{
+  background: rgba(201, 196, 198, 0.5);
+  padding: 10px 10px;
   border-radius: 50%;
 }
  
